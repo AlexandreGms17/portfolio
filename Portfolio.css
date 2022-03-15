@@ -107,15 +107,8 @@ header button{
     
 }
 .intro{
-    margin-left: 4px;
-}
-.projets .p{
+    margin-left: 20px;
 
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 footer{
     margin-top: 40px;
