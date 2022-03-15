@@ -61,7 +61,10 @@ header button{
     font-size: 20px;
     cursor: pointer;
 }
+.p{
 
+    margin-left: 3px;
+}
 .main{
     margin-top: 40px;
     display: flex;
