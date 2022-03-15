@@ -107,6 +107,14 @@ header button{
     margin-top: 5px;
     
 }
+.projets{
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 footer{
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
