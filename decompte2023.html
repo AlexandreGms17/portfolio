@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class = "text">
+    <p> Petit projet de mise en abime au JavaScript</p>
+    <p> voici un décompte du temps qu'il reste avant de passer en 2023</p>
+
+</div>
+<p id="demo"></p>
+
+<script>
+// Décompte à partir de cette date
+var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+
+// actualiser le temps toutes les secondes
+var x = setInterval(function() {
+
+  // aujourd'hui 
+  var now = new Date().getTime();
+    
+  // temps qu'il reste entre la date entrée er aujourd'hui
+  var distance = countDownDate - now;
+    
+  // calculs pour jours, heures, minutes secondes
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // renvoyer le resultat au id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // si le compteur arrive à la fin
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "C'est l'heure";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
